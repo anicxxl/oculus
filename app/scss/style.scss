@@ -1,0 +1,128 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+// HEADER
+
+.header {
+  background-color: $white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5c5c5e;
+  }
+}
+
+//MAIN-CONTENT
+.main-content {
+  background-image: url('../images/main-content-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+  padding-top: 208px;
+
+  &__inner {
+    max-width: 600px;
+  }
+
+  &__title {
+    font-size: 96px;
+    line-height: 110px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    line-height: 41px;
+    color: $white;
+    margin-bottom: 5px;
+  }
+
+  &__offer-text {
+    font-size: 13px;
+    line-height: 15px;
+    color: #F6F4F5;
+    margin-bottom: 50px;
+  }
+
+
+
+
+}
+
+.main-content__offer {
+  display: flex;
+  margin-bottom: 10px;
+
+  &-button {
+    width: 50%;
+    min-height: 60px;
+    /* gradient */
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &-price-wrapper {
+    width: 50%;
+    min-height: 60px;
+    padding: 2px;
+  }
+
+  &-price {
+    width: 50%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93)) 1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: $white;
+  }
+
+  &-subtext {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: $white;
+  }
+}
+
+
+
+
+/*
+font-family: 'Roboto', sans-serif;
+fw: 400,700
+
+*/
+
+@import 'media';
