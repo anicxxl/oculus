@@ -11,7 +11,14 @@ body {
   margin: 0 auto;
 }
 
-.btn-reset{
+.btn-reset {
   border: none;
   background-color: transparent;
+}
+
+.gradient-title {
+  /* gradient */
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

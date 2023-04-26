@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'libs';
 
 // HEADER
 
@@ -36,7 +37,6 @@
 
 //MAIN-CONTENT
 .main-content {
-  background-image: url('../images/main-content-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -64,7 +64,7 @@
   &__offer-text {
     font-size: 13px;
     line-height: 15px;
-    color: #F6F4F5;
+    color: $white;
     margin-bottom: 50px;
   }
 
@@ -85,6 +85,7 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $white;
+    cursor: pointer;
   }
 
   &-price-wrapper {
@@ -116,7 +117,123 @@
   }
 }
 
+.product {
+  &__inner {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $gray;
+    text-transform: uppercase;
+    margin-bottom: 84px;
+  }
+}
+
+.product-info {
+  max-width: 580px;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+    max-width: 329px;
+    margin-bottom: 20px;
+  }
+}
+
+.product-tabs {
+  &__wrapper {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: $gray;
+
+  }
+
+  &__link--active {
+    color: $black;
+  }
+
+  &__content {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  &__content-box {
+    display: none;
+  }
+
+  &__content-box--active {
+    display: block;
+  }
+
+  &__content-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: $gray;
+    margin-bottom: 10px;
+  }
+
+  &__content-text {
+    max-width: 280px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $gray;
+    margin-bottom: 40px;
+  }
+
+  &__content-video {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+    min-height: 150px;
+    padding: 10px 10px 30px 30px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__content-video-text {
+    position: absolute;
+    bottom: 10px;
+    left: 9px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: $white;
+  }
+
+  &__content-video-link {
+    display: inline-block;
+  }
+}
 
 
 /*
