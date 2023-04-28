@@ -318,9 +318,52 @@
   }
 }
 
+// BANNER
+
+.banner {
+  margin-bottom: 109px;
+
+  &__inner {
+    background-image: url('../images/banner-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 500px;
+  }
+
+  &__img {
+    max-width: 346px;
+    width: 100%;
+    height: 334px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  &__offer {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__offer-price {
+    color: $gray;
+  }
+
+  &__offer-subtext {
+    color: $gray;
+  }
+}
+
+
 /*
 font-family: 'Roboto', sans-serif;
 fw: 400,700
+
+font-family: 'Inter', sans-serif;
+fw: 700
 
 */
 
