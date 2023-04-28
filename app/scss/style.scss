@@ -20,16 +20,6 @@
     align-items: center;
     padding: 19px 0;
   }
-
-  &__menu {
-    display: flex;
-    gap: 20px;
-  }
-
-  &__menu-item {
-    text-decoration: none;
-    @extend %menu;
-  }
 }
 
 //MAIN-CONTENT
@@ -530,7 +520,8 @@
     display: flex;
     align-items: flex-end;
   }
-  &__email-link{
+
+  &__email-link {
     @extend %text-16;
     color: $gray;
     text-decoration: none;
@@ -569,6 +560,27 @@
   }
 
 }
+
+// FOOTER
+
+.footer {
+  padding: 30px 0;
+  border: none;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+  margin-bottom: 44px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__social-list{
+    display: flex;
+    gap: 20px;
+  }
+}
+
 
 
 /*
