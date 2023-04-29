@@ -19,6 +19,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 19px 0;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
@@ -575,7 +577,8 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__social-list{
+
+  &__social-list {
     display: flex;
     gap: 20px;
   }
