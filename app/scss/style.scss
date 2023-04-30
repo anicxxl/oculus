@@ -19,6 +19,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 19px 0;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
@@ -186,6 +188,8 @@
     padding: 10px 10px 30px 30px;
     display: flex;
     align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__content-video-text {
@@ -575,7 +579,8 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__social-list{
+
+  &__social-list {
     display: flex;
     gap: 20px;
   }
