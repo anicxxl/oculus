@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -6,6 +10,13 @@ body {
 
 .container {
   max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container--big {
+  max-width: 1717px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -29,4 +40,14 @@ body {
   line-height: 18px;
   color: $gray;
   text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  text-decoration: none;
+  @extend %menu;
 }
