@@ -1,3 +1,15 @@
+@media (max-width:1180px) {
+  .bundle__items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bundle-item:nth-child(3) {
+    order: -1;
+  }
+}
+
 @media (max-width:1050px) {
   .product__inner {
     flex-direction: column;
@@ -60,8 +72,13 @@
 }
 
 @media (max-width:600px) {
-  .product__inner {
+
+  .product__inner,
+  .bundle {
     padding: 50px 0;
+  }
+  .banner{
+    margin-bottom: 50px;
   }
 
   .games {
@@ -132,5 +149,8 @@
   }
 }
 
-@media (max-width:360px) {
+@media (max-width:450px) {
+  .bundle-item:first-child img {
+    height: 300px;
+  }
 }
