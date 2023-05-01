@@ -72,6 +72,17 @@
   .picture__img {
     height: 370px;
   }
+
+  .accessories__items {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .picture,
+  .accessories {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width:600px) {
@@ -151,6 +162,7 @@
     align-items: center;
     gap: 20px;
   }
+
   .picture__img {
     height: 270px;
   }
